@@ -1,25 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Website Creator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Premium Styling */
+    a i{
+        margin: 0.3rem;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+    }
+    .navbar-brand {
+        white-space: normal !important;
+      color: #fff !important;
+      font-weight: bold;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }  
+    .hero .btn{
+        font-weight: 600;
+    }
+    .hero {
+      background: linear-gradient(rgba(13, 110, 253, 0.85), rgba(102, 16, 242, 0.85)), url('https://picsum.photos/1600/700?tech');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 120px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+    .steps .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .steps .card:hover {
+      transform: translateY(-8px);
+    }
+    .features {
+      background-color: #fff;
+      padding: 60px 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features ul li {
+      padding: 12px 0;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #e9ecef;
+    }
+    .features ul li::before {
+      content: "✔️";
+      color: #0d6efd;
+      margin-right: 10px;
+    }
+    footer {
+      background: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      border-radius: 10px 10px 0 0;
+    }
+  </style>
 </head>
+
 <body>
-  
-   
-
- 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg text-center " style="display: flex;justify-content: center;">
     
- <!-- end  -->
+      <a class="navbar-brand text-center" href="https://samidev786.github.io/My-Portfolio/">JS Website Builder</a>
+    
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Build Websites Without Coding</h1>
+      <p>Create fully functional and responsive websites just by giving prompts.  
+      No code, no hassle – just ideas turned into reality.</p>
+      <a href="./redirect.html" class="btn btn-light btn-lg shadow">Get Started</a>
+    </div>
+  </section>
 
+  <!-- Steps Section -->
+  <section class="steps py-5">
+    <div class="container text-center">
+      <h2 class="mb-5 fw-bold">How It Works</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h4 class="fw-bold">Step 1</h4>
+            <p>Write your idea or prompt. Just explain in words what type of website you need.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h4 class="fw-bold">Step 2</h4>
+            <p>Our JS Creator processes your input and generates optimized code instantly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h4 class="fw-bold">Step 3</h4>
+            <p>Preview and download your ready-to-use, responsive website without coding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container features">
+      <h2 class="text-center fw-bold mb-4">Key Features</h2>
+      <ul>
+        <li>Generate websites using simple prompts</li>
+        <li>Clean and responsive Bootstrap design</li>
+        <li>No coding knowledge required</li>
+        <li>Export and customize anytime</li>
+        <li>Fast, secure, and user-friendly</li>
+      </ul>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JS Website Creator by Sami | All Rights Reserved</p>
+    <a href="https://wa.me/03110030455"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/saylani.smit/"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/@programmingwithzubairminhas"><i class="fab fa-youtube"></i></a>
+    <a href="https://github.com/samidev786"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/muhammad-sami-shaikh-889660367/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://samidev786.github.io/My-Portfolio/"><i class="far fa-address-card"></i></a>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
-<script src="./app.js"></script>    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

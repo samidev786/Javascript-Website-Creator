@@ -1,3 +1,4 @@
+var userName = prompt(`plz enter user name `)
 var themeColor = prompt(`write the primary color you want to use in your website`,`red`)
 var navAsk = prompt(
   `do you want to build a navbar in your website?\nYes\nNo`,`yes`
@@ -294,12 +295,14 @@ if (isNaN(footerAsk) === false) {
 } 
 else{
   if(footerAsk === "yes"){
-var Name = prompt(`plz enter your name so that we may use it in the footer`)
 var fontColor = "white";
 if(themeColor == ""){
-fontColor = black;
+fontColor = "black";
 }
-    var footerPara = prompt(`plz enter the footer paragraph`,`Copyright &copy; 2025 | Developed by ${Name} | All Rights Reserved.`)
+else{
+  fontColor = "white"
+}
+    var footerPara = prompt(`plz enter the footer paragraph`,`Copyright © 2025 | Developed by ${userName} | All Rights Reserved.`)
 document.writeln(`
     <footer id='footer' style='background-color:${themeColor};color:${fontColor};margin:0px !important'>
         <p class='m-0'>${footerPara}</p>
